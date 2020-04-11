@@ -1,4 +1,4 @@
-function forecastCOVIDcases(days){
+function forecastCOVIDcasesLA(days){
     //total population of LA - 10.16 million
 
     //first number in 2-D array states the days since January 26
