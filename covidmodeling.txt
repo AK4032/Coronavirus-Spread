@@ -1,3 +1,18 @@
+function forecastCOVIDcasesNY(aprilDay){
+    //total population of NY - 8.399 million
+    var population = 8,399,000;
+    var x = AprilDate + 14;
+
+    //returning forecasted values
+    
+    //This equation was made by having the computer learn the data
+    //and having it compute a power regression on it. The result 
+    //was an exponential equation:
+
+    prob = 1075 + 806*x + 269*x*x -11.9*Math.pow(x,3) + 0.252 * Math.pow(x,4);
+    return prob / population;
+}
+
 function forecastCOVIDcasesLA(days){
     //total population of LA - 10.16 million
 
